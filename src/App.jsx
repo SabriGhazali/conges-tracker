@@ -56,6 +56,7 @@ const BULLETINS = [
   { month: "Oct. 2025", p1: "24/25", p1a: 22.5, p1p: 9.0, p1r: 13.5, p2: "25/26", p2a: 12.5, p2p: 0, p2r: 12.5, highlight: true },
   { month: "Nov. 2025", p1: "24/25", p1a: 22.5, p1p: 9.0, p1r: 13.5, p2: "25/26", p2a: 15.0, p2p: 0, p2r: 15.0 },
   { month: "Déc. 2025", p1: "24/25", p1a: 22.5, p1p: 9.0, p1r: 13.5, p2: "25/26", p2a: 17.5, p2p: 0, p2r: 17.5 },
+  { month: "Janv. 2026", p1: "24/25", p1a: 22.5, p1p: 9.0, p1r: 13.5, p2: "25/26", p2a: 20.0, p2p: 0, p2r: 20.0 },
 ];
 
 // Anomalies to track
