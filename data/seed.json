@@ -8,54 +8,386 @@
     "acquisitionPerMonth": 2.5
   },
   "periods": [
-    { "id": "23/24", "startAcq": "2024-04-22", "endAcq": "2024-05-31", "totalAcquis": 4.0 },
-    { "id": "24/25", "startAcq": "2024-06-01", "endAcq": "2025-05-31", "totalAcquis": 22.5 },
-    { "id": "25/26", "startAcq": "2025-06-01", "endAcq": "2026-05-31", "totalAcquis": null }
+    {
+      "id": "23/24",
+      "startAcq": "2024-04-22",
+      "endAcq": "2024-05-31",
+      "totalAcquis": 4
+    },
+    {
+      "id": "24/25",
+      "startAcq": "2024-06-01",
+      "endAcq": "2025-05-31",
+      "totalAcquis": 22.5
+    },
+    {
+      "id": "25/26",
+      "startAcq": "2025-06-01",
+      "endAcq": "2026-05-31",
+      "totalAcquis": null
+    }
   ],
   "leavesTaken": [
-    { "dates": "25–27 sept. 2024", "days": 3, "period": "23/24", "month": "2024-09" },
-    { "dates": "14 janv. 2025", "days": 1, "period": "23/24", "month": "2025-01" },
-    { "dates": "14–21 mars 2025", "days": 6, "period": "24/25", "month": "2025-03" },
-    { "dates": "2 mai 2025", "days": 1, "period": "24/25", "month": "2025-05" },
-    { "dates": "9 mai 2025", "days": 1, "period": "24/25", "month": "2025-05" },
-    { "dates": "30 mai 2025", "days": 1, "period": "24/25", "month": "2025-05" },
-    { "dates": "25–29 août 2025", "days": 5, "period": "24/25", "month": "2025-08" },
-    { "dates": "23, 24, 27 oct. 2025", "days": 3, "period": "24/25", "month": "2025-10" },
-    { "dates": "12 déc. 2025", "days": 1, "period": "24/25", "month": "2025-12" },
-    { "dates": "11–13 fév. 2026", "days": 3, "period": "24/25", "month": "2026-02" },
-    { "dates": "9–13 mars 2026", "days": 5, "period": "24/25", "month": "2026-03" }
+    {
+      "dates": "25–27 sept. 2024",
+      "days": 3,
+      "period": "23/24",
+      "month": "2024-09"
+    },
+    {
+      "dates": "14 janv. 2025",
+      "days": 1,
+      "period": "23/24",
+      "month": "2025-01"
+    },
+    {
+      "dates": "14–21 mars 2025",
+      "days": 6,
+      "period": "24/25",
+      "month": "2025-03"
+    },
+    {
+      "dates": "2 mai 2025",
+      "days": 1,
+      "period": "24/25",
+      "month": "2025-05"
+    },
+    {
+      "dates": "9 mai 2025",
+      "days": 1,
+      "period": "24/25",
+      "month": "2025-05"
+    },
+    {
+      "dates": "30 mai 2025",
+      "days": 1,
+      "period": "24/25",
+      "month": "2025-05"
+    },
+    {
+      "dates": "25–29 août 2025",
+      "days": 5,
+      "period": "24/25",
+      "month": "2025-08"
+    },
+    {
+      "dates": "23, 24, 27 oct. 2025",
+      "days": 3,
+      "period": "24/25",
+      "month": "2025-10"
+    },
+    {
+      "dates": "12 déc. 2025",
+      "days": 1,
+      "period": "24/25",
+      "month": "2025-12"
+    },
+    {
+      "dates": "11–13 fév. 2026",
+      "days": 3,
+      "period": "25/26",
+      "month": "2026-02"
+    },
+    {
+      "dates": "9–13 mars 2026",
+      "days": 5,
+      "period": "25/26",
+      "month": "2026-03"
+    }
   ],
   "bulletins": [
-    { "month": "Avr. 2024", "p1": "22/23", "p1a": 0.75, "p1p": 0, "p1r": 0.75, "p2": "—", "p2a": null, "p2p": null, "p2r": null },
-    { "month": "Mai 2024", "p1": "22/23", "p1a": 3.25, "p1p": 0, "p1r": 3.25, "p2": "23/24", "p2a": null, "p2p": null, "p2r": null },
-    { "month": "Juin 2024", "p1": "23/24", "p1a": 4.0, "p1p": 0, "p1r": 4.0, "p2": "24/25", "p2a": 2.5, "p2p": 0, "p2r": 2.5 },
-    { "month": "Juil. 2024", "p1": "23/24", "p1a": 4.0, "p1p": 0, "p1r": 4.0, "p2": "24/25", "p2a": 5.0, "p2p": 0, "p2r": 5.0 },
-    { "month": "Août 2024", "p1": "23/24", "p1a": 4.0, "p1p": 0, "p1r": 4.0, "p2": "24/25", "p2a": 7.5, "p2p": 0, "p2r": 7.5 },
-    { "month": "Sept. 2024", "p1": "23/24", "p1a": 4.0, "p1p": 3.0, "p1r": 1.0, "p2": "24/25", "p2a": 10.0, "p2p": 0, "p2r": 10.0, "highlight": true },
-    { "month": "Oct. 2024", "p1": "23/24", "p1a": 4.0, "p1p": 3.0, "p1r": 1.0, "p2": "24/25", "p2a": 12.5, "p2p": 0, "p2r": 12.5 },
-    { "month": "Nov. 2024", "p1": "23/24", "p1a": 4.0, "p1p": 3.0, "p1r": 1.0, "p2": "24/25", "p2a": 15.0, "p2p": 0, "p2r": 15.0 },
-    { "month": "Déc. 2024", "p1": "23/24", "p1a": 4.0, "p1p": 3.0, "p1r": 1.0, "p2": "24/25", "p2a": 17.5, "p2p": 0, "p2r": 17.5 },
-    { "month": "Janv. 2025", "p1": "23/24", "p1a": 4.0, "p1p": 3.0, "p1r": 1.0, "p2": "24/25", "p2a": 20.0, "p2p": 0, "p2r": 20.0 },
-    { "month": "Fév. 2025", "p1": "23/24", "p1a": 4.0, "p1p": 3.0, "p1r": 1.0, "p2": "24/25", "p2a": 22.5, "p2p": 0, "p2r": 22.5 },
-    { "month": "Mars 2025", "p1": "—", "p1a": null, "p1p": null, "p1r": null, "p2": "24/25", "p2a": 22.5, "p2p": 7.0, "p2r": null, "mismatch": true, "note": "7j compté au lieu de 6" },
-    { "month": "Avr. 2025", "p1": "23/24", "p1a": 4.0, "p1p": 4.0, "p1r": 0, "p2": "24/25", "p2a": 27.5, "p2p": 7.0, "p2r": 20.5, "highlight": true },
-    { "month": "Mai 2025", "p1": null, "p1a": null, "p1p": null, "p1r": null, "p2": null, "p2a": null, "p2p": null, "p2r": null, "missing": true, "note": "Bulletin manquant (changement société)" },
-    { "month": "Juin 2025", "p1": "24/25", "p1a": 22.5, "p1p": 1.0, "p1r": 21.5, "p2": "25/26", "p2a": 2.5, "p2p": 0, "p2r": 2.5 },
-    { "month": "Juil. 2025", "p1": "24/25", "p1a": 22.5, "p1p": 1.0, "p1r": 21.5, "p2": "25/26", "p2a": 5.0, "p2p": 0, "p2r": 5.0 },
-    { "month": "Août 2025", "p1": "24/25", "p1a": 22.5, "p1p": 6.0, "p1r": 16.5, "p2": "25/26", "p2a": 7.5, "p2p": 0, "p2r": 7.5, "highlight": true },
-    { "month": "Sept. 2025", "p1": "24/25", "p1a": 22.5, "p1p": 6.0, "p1r": 16.5, "p2": "25/26", "p2a": 10.0, "p2p": 0, "p2r": 10.0 },
-    { "month": "Oct. 2025", "p1": "24/25", "p1a": 22.5, "p1p": 9.0, "p1r": 13.5, "p2": "25/26", "p2a": 12.5, "p2p": 0, "p2r": 12.5, "highlight": true },
-    { "month": "Nov. 2025", "p1": "24/25", "p1a": 22.5, "p1p": 9.0, "p1r": 13.5, "p2": "25/26", "p2a": 15.0, "p2p": 0, "p2r": 15.0 },
-    { "month": "Déc. 2025", "p1": "24/25", "p1a": 22.5, "p1p": 9.0, "p1r": 13.5, "p2": "25/26", "p2a": 17.5, "p2p": 0, "p2r": 17.5 },
-    { "month": "Janv. 2026", "p1": "24/25", "p1a": 22.5, "p1p": 9.0, "p1r": 13.5, "p2": "25/26", "p2a": 20.0, "p2p": 0, "p2r": 20.0 },
-    { "month": "Fév. 2026", "p1": "24/25", "p1a": 22.5, "p1p": 9.0, "p1r": 13.5, "p2": "25/26", "p2a": 22.5, "p2p": 0, "p2r": 22.5 }
+    {
+      "month": "Avr. 2024",
+      "p1": "22/23",
+      "p1a": 0.75,
+      "p1p": 0,
+      "p1r": 0.75,
+      "p2": "—",
+      "p2a": null,
+      "p2p": null,
+      "p2r": null
+    },
+    {
+      "month": "Mai 2024",
+      "p1": "22/23",
+      "p1a": 3.25,
+      "p1p": 0,
+      "p1r": 3.25,
+      "p2": "23/24",
+      "p2a": null,
+      "p2p": null,
+      "p2r": null
+    },
+    {
+      "month": "Juin 2024",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 0,
+      "p1r": 4,
+      "p2": "24/25",
+      "p2a": 2.5,
+      "p2p": 0,
+      "p2r": 2.5
+    },
+    {
+      "month": "Juil. 2024",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 0,
+      "p1r": 4,
+      "p2": "24/25",
+      "p2a": 5,
+      "p2p": 0,
+      "p2r": 5
+    },
+    {
+      "month": "Août 2024",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 0,
+      "p1r": 4,
+      "p2": "24/25",
+      "p2a": 7.5,
+      "p2p": 0,
+      "p2r": 7.5
+    },
+    {
+      "month": "Sept. 2024",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 3,
+      "p1r": 1,
+      "p2": "24/25",
+      "p2a": 10,
+      "p2p": 0,
+      "p2r": 10,
+      "highlight": true
+    },
+    {
+      "month": "Oct. 2024",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 3,
+      "p1r": 1,
+      "p2": "24/25",
+      "p2a": 12.5,
+      "p2p": 0,
+      "p2r": 12.5
+    },
+    {
+      "month": "Nov. 2024",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 3,
+      "p1r": 1,
+      "p2": "24/25",
+      "p2a": 15,
+      "p2p": 0,
+      "p2r": 15
+    },
+    {
+      "month": "Déc. 2024",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 3,
+      "p1r": 1,
+      "p2": "24/25",
+      "p2a": 17.5,
+      "p2p": 0,
+      "p2r": 17.5
+    },
+    {
+      "month": "Janv. 2025",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 3,
+      "p1r": 1,
+      "p2": "24/25",
+      "p2a": 20,
+      "p2p": 0,
+      "p2r": 20
+    },
+    {
+      "month": "Fév. 2025",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 3,
+      "p1r": 1,
+      "p2": "24/25",
+      "p2a": 22.5,
+      "p2p": 0,
+      "p2r": 22.5
+    },
+    {
+      "month": "Mars 2025",
+      "p1": "—",
+      "p1a": null,
+      "p1p": null,
+      "p1r": null,
+      "p2": "24/25",
+      "p2a": 22.5,
+      "p2p": 7,
+      "p2r": null,
+      "mismatch": true,
+      "note": "7j compté au lieu de 6"
+    },
+    {
+      "month": "Avr. 2025",
+      "p1": "23/24",
+      "p1a": 4,
+      "p1p": 4,
+      "p1r": 0,
+      "p2": "24/25",
+      "p2a": 27.5,
+      "p2p": 7,
+      "p2r": 20.5,
+      "highlight": true
+    },
+    {
+      "month": "Mai 2025",
+      "p1": null,
+      "p1a": null,
+      "p1p": null,
+      "p1r": null,
+      "p2": null,
+      "p2a": null,
+      "p2p": null,
+      "p2r": null,
+      "missing": true,
+      "note": "Bulletin manquant (changement société)"
+    },
+    {
+      "month": "Juin 2025",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 1,
+      "p1r": 21.5,
+      "p2": "25/26",
+      "p2a": 2.5,
+      "p2p": 0,
+      "p2r": 2.5
+    },
+    {
+      "month": "Juil. 2025",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 1,
+      "p1r": 21.5,
+      "p2": "25/26",
+      "p2a": 5,
+      "p2p": 0,
+      "p2r": 5
+    },
+    {
+      "month": "Août 2025",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 6,
+      "p1r": 16.5,
+      "p2": "25/26",
+      "p2a": 7.5,
+      "p2p": 0,
+      "p2r": 7.5,
+      "highlight": true
+    },
+    {
+      "month": "Sept. 2025",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 6,
+      "p1r": 16.5,
+      "p2": "25/26",
+      "p2a": 10,
+      "p2p": 0,
+      "p2r": 10
+    },
+    {
+      "month": "Oct. 2025",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 9,
+      "p1r": 13.5,
+      "p2": "25/26",
+      "p2a": 12.5,
+      "p2p": 0,
+      "p2r": 12.5,
+      "highlight": true
+    },
+    {
+      "month": "Nov. 2025",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 9,
+      "p1r": 13.5,
+      "p2": "25/26",
+      "p2a": 15,
+      "p2p": 0,
+      "p2r": 15
+    },
+    {
+      "month": "Déc. 2025",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 9,
+      "p1r": 13.5,
+      "p2": "25/26",
+      "p2a": 17.5,
+      "p2p": 0,
+      "p2r": 17.5
+    },
+    {
+      "month": "Janv. 2026",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 9,
+      "p1r": 13.5,
+      "p2": "25/26",
+      "p2a": 20,
+      "p2p": 0,
+      "p2r": 20
+    },
+    {
+      "month": "Fév. 2026",
+      "p1": "24/25",
+      "p1a": 22.5,
+      "p1p": 9,
+      "p1r": 13.5,
+      "p2": "25/26",
+      "p2a": 22.5,
+      "p2p": 0,
+      "p2r": 22.5
+    }
   ],
   "anomalies": [
-    { "type": "trop", "desc": "Mars 2025 : 7 jours comptés au lieu de 6 (+1 en trop)", "severity": "warning" },
-    { "type": "manque", "desc": "Mai 2025 : 3 jours déclarés par email, non comptés sur bulletins", "severity": "error" },
-    { "type": "manque", "desc": "Déc. 2025 : 1 jour déclaré par email, non compté sur bulletin", "severity": "error" },
-    { "type": "manque", "desc": "Fév. 2026 : 3 jours (11–13 fév.) non comptés sur bulletin de fév. 2026", "severity": "error" },
-    { "type": "info", "desc": "Bulletin mai 2025 manquant (changement Le Sanctuaire → WENEEDS)", "severity": "info" },
-    { "type": "ok", "desc": "Régularisation 14 janv. 2025 sur 23/24 : effectuée en avril 2025 ✓", "severity": "ok" }
+    {
+      "type": "trop",
+      "desc": "Mars 2025 : 7 jours comptés au lieu de 6 (+1 en trop)",
+      "severity": "warning"
+    },
+    {
+      "type": "manque",
+      "desc": "Mai 2025 : 3 jours déclarés par email, non comptés sur bulletins",
+      "severity": "error"
+    },
+    {
+      "type": "manque",
+      "desc": "Déc. 2025 : 1 jour déclaré par email, non compté sur bulletin",
+      "severity": "error"
+    },
+    {
+      "type": "manque",
+      "desc": "Fév. 2026 : 3 jours (11–13 fév.) non comptés sur bulletin de fév. 2026",
+      "severity": "error"
+    },
+    {
+      "type": "info",
+      "desc": "Bulletin mai 2025 manquant (changement Le Sanctuaire → WENEEDS)",
+      "severity": "info"
+    },
+    {
+      "type": "ok",
+      "desc": "Régularisation 14 janv. 2025 sur 23/24 : effectuée en avril 2025 ✓",
+      "severity": "ok"
+    }
   ]
 }
