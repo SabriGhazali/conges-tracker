@@ -405,9 +405,11 @@ export default function App() {
           .grid-periods { grid-template-columns: 1fr !important; }
           .grid-3 { grid-template-columns: 1fr !important; }
           .grid-bulletins { grid-template-columns: 1fr !important; }
+          .main-container { padding: 24px 16px !important; }
         }
         @media (max-width: 600px) {
           .grid-4 { grid-template-columns: 1fr !important; }
+          .main-container { padding: 16px 12px !important; }
         }
       `}</style>
 
@@ -427,7 +429,7 @@ export default function App() {
         />
       )}
 
-      <div style={{ maxWidth: 1600, margin: "0 auto", padding: "32px 24px" }}>
+      <div className="main-container" style={{ padding: "32px 48px" }}>
 
         {/* Header */}
         <div style={{
