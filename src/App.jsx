@@ -400,6 +400,15 @@ export default function App() {
         th:last-child, td:last-child { text-align:right; }
         td { padding:10px 14px; border-top:1px solid #1e2230; font-size:13px; }
         tr:hover td { background:rgba(129,140,248,0.04); }
+        @media (max-width: 900px) {
+          .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+          .grid-periods { grid-template-columns: 1fr !important; }
+          .grid-3 { grid-template-columns: 1fr !important; }
+          .grid-bulletins { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 600px) {
+          .grid-4 { grid-template-columns: 1fr !important; }
+        }
       `}</style>
 
       {showAddModal && (
@@ -418,7 +427,7 @@ export default function App() {
         />
       )}
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "32px 24px" }}>
+      <div style={{ maxWidth: 1600, margin: "0 auto", padding: "32px 24px" }}>
 
         {/* Header */}
         <div style={{
@@ -489,7 +498,7 @@ export default function App() {
         {/* ═══════════ DASHBOARD ═══════════ */}
         {activeTab === "dashboard" && (
           <div style={{ animation: "fadeIn 0.4s ease" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 28 }}>
+            <div className="grid-4" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 28 }}>
               <StatCard label="Total Acquis" value={formatNum(computed.totalAcquis)} sub="toutes périodes confondues" color="#60a5fa" delay={0.1} />
               <StatCard label="Total Pris" value={computed.totalPris} sub="jours ouvrables" color="#f87171" delay={0.2} />
               <StatCard label="Solde Restant" value={formatNum(computed.totalRestant)} sub="jours disponibles" color="#34d399" delay={0.3} />
@@ -501,7 +510,7 @@ export default function App() {
                 <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                 Solde par période
               </h2>
-              <div style={{ display: "grid", gridTemplateColumns: `repeat(${computed.periods.length}, 1fr)`, gap: 12 }}>
+              <div className="grid-periods" style={{ display: "grid", gridTemplateColumns: `repeat(${computed.periods.length}, 1fr)`, gap: 12 }}>
                 {computed.periods.map((p) => (
                   <SoldeCard key={p.id} period={p.id} acquis={p.acquis} pris={p.pris} restant={p.restant} />
                 ))}
@@ -573,7 +582,7 @@ export default function App() {
               </table>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: `repeat(${computed.periods.length}, 1fr)`, gap: 12 }}>
+            <div className="grid-periods" style={{ display: "grid", gridTemplateColumns: `repeat(${computed.periods.length}, 1fr)`, gap: 12 }}>
               {computed.periods.map((p) => {
                 const leaves = leavesTaken.filter((l) => l.period === p.id);
                 return (
@@ -602,7 +611,7 @@ export default function App() {
         {/* ═══════════ BULLETINS ═══════════ */}
         {activeTab === "bulletins" && (
           <div style={{ animation: "fadeIn 0.4s ease" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 24 }}>
+            <div className="grid-bulletins" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 24 }}>
               <div style={{ background: "#151820", border: "1px solid #252a36", borderRadius: 14, overflow: "hidden" }}>
                 <div style={{ padding: "12px 16px", background: "#1a1e2a", fontSize: 13, fontWeight: 600, textAlign: "center" }}>
                   📄 Dernier bulletin ({computed.lastBulletin?.month})
@@ -831,7 +840,7 @@ export default function App() {
               )}
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16, marginBottom: 24 }}>
+            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16, marginBottom: 24 }}>
               <div style={{
                 background: "#151820", border: "1px solid #252a36", borderRadius: 14,
                 padding: 24, textAlign: "center",
@@ -888,7 +897,7 @@ export default function App() {
 
             <div style={{ background: "#151820", border: "1px solid #252a36", borderRadius: 14, padding: 20 }}>
               <h3 style={{ fontSize: 14, fontWeight: 600, marginBottom: 16, color: "#818cf8" }}>Statistiques des données</h3>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12 }}>
+              <div className="grid-4" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12 }}>
                 {[
                   ["Périodes", rawPeriods.length],
                   ["Congés déclarés", leavesTaken.length],
